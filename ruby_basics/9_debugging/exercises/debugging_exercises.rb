@@ -7,6 +7,7 @@
 
 def decrement_smallest_value(nested_array)
   smallest_value = nested_array.flatten.max
+  pry.binding
   nested_array.each do |array|
     array.each do |current_value|
       if smallest_value > current_value
